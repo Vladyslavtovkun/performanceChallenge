@@ -163,7 +163,7 @@ class PerformanceChallenge extends Simulation {
 			.pause(3, 15)
 
 			.exec(http("done")
-					.get("/done")
+			.get("/done")
 			.check(status.is(200)))
 
 	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
